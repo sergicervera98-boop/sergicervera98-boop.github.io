@@ -1,0 +1,167 @@
+/* ===== ZONA 1: AJUSTES DEL TEMA (colores y medidas) ===== */
+:root {
+    --fondo: #0f1220;
+    --fondo-tarjeta: #1a1f33;
+    --texto: #e6e8f0;
+    --texto-suave: #a0a6bd;
+    --acento: #8b6cff;
+    --acento-claro: #b5a3ff;
+    --borde: #2c3352;
+    --radio: 12px;
+}
+
+/* ===== ZONA 2: BASE ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;   /* el "viaje rápido" del menú se desliza en vez de saltar */
+}
+
+body {
+    margin: 0;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== ZONA 3: CABECERA ===== */
+header {
+    text-align: center;
+    padding: 64px 16px 40px;
+    background: linear-gradient(180deg, #1c1640 0%, var(--fondo) 100%);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.subtitulo {
+    margin: 8px 0 24px;
+    color: var(--texto-suave);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--acento-claro);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--texto);
+}
+
+/* ===== ZONA 4: SECCIONES ===== */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--borde);
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: var(--acento-claro);
+}
+
+.tecnologias {
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* ===== ZONA 5: TARJETAS DE PROYECTO ===== */
+.proyecto {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    background-color: var(--fondo-tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.proyecto img {
+    width: 45%;
+    border-radius: 8px;
+    border: 1px solid var(--borde);
+}
+
+.proyecto h3 {
+    margin-top: 0;
+}
+
+.etiqueta {
+    font-size: 0.75rem;
+    background-color: var(--acento);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 999px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* ===== ZONA 6: BOTONES Y CONTACTO ===== */
+.boton {
+    display: inline-block;
+    background-color: var(--acento);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.boton:hover {
+    background-color: #7352f0;
+}
+
+.enlaces {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* ===== ZONA 7: PIE ===== */
+footer {
+    text-align: center;
+    padding: 24px 16px;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}
+
+/* ===== ZONA 8: MÓVIL (pantallas estrechas) ===== */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .proyecto {
+        flex-direction: column;    /* imagen arriba y texto abajo, en vez de lado a lado */
+    }
+
+    .proyecto img {
+        width: 100%;
+    }
+}

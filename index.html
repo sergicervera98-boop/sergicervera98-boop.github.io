@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergi Cervera | Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ===== CABECERA: nombre y menú ===== -->
+    <header>
+        <h1>Sergi Cervera Cebrian</h1>
+        <p class="subtitulo">Desarrollador de aplicaciones multiplataforma en formación</p>
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== SOBRE MÍ ===== -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy estudiante de segundo curso de Desarrollo de Aplicaciones Multiplataforma (DAM).
+                Después de varios años trabajando en el sector de la seguridad, decidí dar el salto
+                a la programación, algo que siempre me había llamado la atención.
+            </p>
+            <p>
+                Me gusta entender cómo funcionan las cosas por dentro y construir aplicaciones
+                útiles y bien organizadas. Busco prácticas como desarrollador junior para seguir
+                aprendiendo dentro de un equipo.
+            </p>
+            <p class="tecnologias">Java · PostgreSQL · HTML · CSS · Kotlin · Git</p>
+        </section>
+
+        <!-- ===== PROYECTOS ===== -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+
+            <!-- Proyecto 1: Java -->
+            <article class="proyecto">
+                <img src="img/menu-listar.png" alt="Menú del programa mostrando la lista de videojuegos">
+                <div class="proyecto-texto">
+                    <h3>Colección de videojuegos</h3>
+                    <p>
+                        Programa para organizar una colección de videojuegos: añadir juegos,
+                        consultarlos, modificarlos y borrarlos. Guarda los datos en una base de datos
+                        y comprueba que todo lo que se escribe sea correcto.
+                    </p>
+                    <p class="tecnologias">Java · PostgreSQL · Maven</p>
+                    <a class="boton" href="https://github.com/sergicervera98-boop/Coleccion-videojuegos-java" target="_blank">Ver el código en GitHub</a>
+                </div>
+            </article>
+
+            <!-- Proyecto 2: Android -->
+            <article class="proyecto">
+                <div class="proyecto-texto">
+                    <h3>App Android de la colección <span class="etiqueta">En desarrollo</span></h3>
+                    <p>
+                        Versión para móvil de la colección de videojuegos: ver, añadir y borrar
+                        juegos desde el teléfono.
+                    </p>
+                    <p class="tecnologias">Kotlin · Android Studio</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- ===== CONTACTO ===== -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Te interesa mi perfil? Puedes descargar mi CV o encontrarme aquí:</p>
+            <div class="enlaces">
+                <a class="boton" href="documentos/cv-sergi-cervera.pdf" target="_blank">Descargar CV</a>
+                <a class="boton" href="https://www.linkedin.com/in/sergicervera98/" target="_blank">LinkedIn</a>  
+                <a class="boton" href="https://github.com/sergicervera98-boop" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Sergi Cervera Cebrian</p>
+    </footer>
+
+</body>
+</html>
