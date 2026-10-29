@@ -92,8 +92,8 @@ h2 {
 /* ===== ZONA 5: TARJETAS DE PROYECTO ===== */
 .proyecto {
     display: flex;
+    flex-direction: column;
     gap: 24px;
-    align-items: center;
     background-color: var(--fondo-tarjeta);
     border: 1px solid var(--borde);
     border-radius: var(--radio);
@@ -102,9 +102,11 @@ h2 {
 }
 
 .proyecto img {
-    width: 45%;
+    width: 100%;
+    display: block;
     border-radius: 8px;
     border: 1px solid var(--borde);
+    cursor: zoom-in;
 }
 
 .proyecto h3 {
